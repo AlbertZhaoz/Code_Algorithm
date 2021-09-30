@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d2857d20-d50f-4f36-8ddd-74d2db46a774": {
+      "ProjectGuid": "d2857d20-d50f-4f36-8ddd-74d2db46a774",
+      "DisplayName": "210926_Demon01_对数器",
+      "ColorIndex": 0
+    },
+    "ba24e970-0593-415a-ad57-f9ce24eed4a9": {
+      "ProjectGuid": "ba24e970-0593-415a-ad57-f9ce24eed4a9",
+      "DisplayName": "210928_Demon01_二分法",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

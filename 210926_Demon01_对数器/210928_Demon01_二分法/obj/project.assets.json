@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\AlbertZhao's Study\\Algorithm\\210926_Demon01_对数器\\210928_Demon01_二分法\\210928_Demon01_二分法.csproj",
+      "projectUniqueName": "F:\\Repo\\Algorithm\\210926_Demon01_对数器\\210928_Demon01_二分法\\210928_Demon01_二分法.csproj",
       "projectName": "210928_Demon01_二分法",
-      "projectPath": "F:\\AlbertZhao's Study\\Algorithm\\210926_Demon01_对数器\\210928_Demon01_二分法\\210928_Demon01_二分法.csproj",
+      "projectPath": "F:\\Repo\\Algorithm\\210926_Demon01_对数器\\210928_Demon01_二分法\\210928_Demon01_二分法.csproj",
       "packagesPath": "C:\\Users\\v-honzhao\\.nuget\\packages\\",
-      "outputPath": "F:\\AlbertZhao's Study\\Algorithm\\210926_Demon01_对数器\\210928_Demon01_二分法\\obj\\",
+      "outputPath": "F:\\Repo\\Algorithm\\210926_Demon01_对数器\\210928_Demon01_二分法\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "210926_Demon01_对数器", "210926_Demon01_对数器\210926_Demon01_对数器.csproj", "{D2857D20-D50F-4F36-8DDD-74D2DB46A774}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "210928_Demon01_二分法", "210928_Demon01_二分法\210928_Demon01_二分法.csproj", "{BA24E970-0593-415A-AD57-F9CE24EED4A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "210928_Demon01_二分法", "210928_Demon01_二分法\210928_Demon01_二分法.csproj", "{BA24E970-0593-415A-AD57-F9CE24EED4A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "210930_Demon01_异或", "210930_Demon01_异或\210930_Demon01_异或.csproj", "{FD7F8264-0416-481D-93E5-329029837590}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BA24E970-0593-415A-AD57-F9CE24EED4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA24E970-0593-415A-AD57-F9CE24EED4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA24E970-0593-415A-AD57-F9CE24EED4A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD7F8264-0416-481D-93E5-329029837590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD7F8264-0416-481D-93E5-329029837590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD7F8264-0416-481D-93E5-329029837590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD7F8264-0416-481D-93E5-329029837590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

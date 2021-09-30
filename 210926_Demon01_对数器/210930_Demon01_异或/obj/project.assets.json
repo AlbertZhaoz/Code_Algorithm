@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Repo\\Algorithm\\210926_Demon01_对数器\\210926_Demon01_对数器\\210926_Demon01_对数器.csproj",
-      "projectName": "210926_Demon01_对数器",
-      "projectPath": "F:\\Repo\\Algorithm\\210926_Demon01_对数器\\210926_Demon01_对数器\\210926_Demon01_对数器.csproj",
+      "projectUniqueName": "F:\\Repo\\Algorithm\\210926_Demon01_对数器\\210930_Demon01_异或\\210930_Demon01_异或.csproj",
+      "projectName": "210930_Demon01_异或",
+      "projectPath": "F:\\Repo\\Algorithm\\210926_Demon01_对数器\\210930_Demon01_异或\\210930_Demon01_异或.csproj",
       "packagesPath": "C:\\Users\\v-honzhao\\.nuget\\packages\\",
-      "outputPath": "F:\\Repo\\Algorithm\\210926_Demon01_对数器\\210926_Demon01_对数器\\obj\\",
+      "outputPath": "F:\\Repo\\Algorithm\\210926_Demon01_对数器\\210930_Demon01_异或\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
