@@ -10,8 +10,8 @@ namespace _210930_Demon01_异或
             Swap(arr[1], arr[2]);
             Console.WriteLine(arr[1]);
             int[] arr2 = new int[] { 1, 1, 4, 4, 3, 6, 6 };
-            Console.WriteLine(FindOddNumber(arr2)); 
-
+            Console.WriteLine(FindOddNumber(arr2));
+            Console.WriteLine("TestWorld");
         }
 
         /// <summary>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "210926_Demon01_对数器/1.0.0": {
+        "runtime": {
+          "210926_Demon01_对数器.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "210926_Demon01_对数器/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
