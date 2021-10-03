@@ -13,6 +13,7 @@ namespace _210930_Demon01_异或
             Console.WriteLine(FindOddNumber(arr2));
             Console.WriteLine("TestWorld");
             Console.WriteLine("TestWorld2");
+            Console.WriteLine("TestWorld3");
         }
 
         /// <summary>
