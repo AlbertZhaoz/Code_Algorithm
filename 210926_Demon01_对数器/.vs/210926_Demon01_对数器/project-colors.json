@@ -10,7 +10,12 @@
       "ProjectGuid": "ba24e970-0593-415a-ad57-f9ce24eed4a9",
       "DisplayName": "210928_Demon01_二分法",
       "ColorIndex": 1
+    },
+    "fd7f8264-0416-481d-93e5-329029837590": {
+      "ProjectGuid": "fd7f8264-0416-481d-93e5-329029837590",
+      "DisplayName": "210930_Demon01_异或",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }
