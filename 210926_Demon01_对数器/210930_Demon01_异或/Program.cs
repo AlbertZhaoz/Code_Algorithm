@@ -6,6 +6,9 @@ namespace _210930_Demon01_异或
     {
         static void Main(string[] args)
         {
+            int test = 7;
+            System.Console.WriteLine((~test)+1);
+            System.Console.WriteLine("================");
             int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7 };
             Swap(arr[1], arr[2]);
             Console.WriteLine(arr[1]);
