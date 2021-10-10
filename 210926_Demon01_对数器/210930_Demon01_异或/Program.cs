@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace _210930_Demon01_异或
 {
@@ -15,6 +16,7 @@ namespace _210930_Demon01_异或
             int[] arrTwo = new int[] { 4, 4,4, 6, 6, 10, 10, 10,11,11,11 };
             int kValue = FindOnlyKOtherM(arrTwo, 2, 3);
             Console.WriteLine($"那个出现K次的数为{kValue}");
+            Console.WriteLine($"第二种方法，那个出现K次的数为{FindOnlyKOtherMByHashCode(arrTwo, 2, 3)}");
             System.Console.WriteLine("================");
 
             int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7 };
@@ -79,6 +81,30 @@ namespace _210930_Demon01_异或
             Console.WriteLine($"另一个数为{eor^eorRight}");
         }
 
+
+        static int FindOnlyKOtherMByHashCode(int[] arr, int k, int m)
+        {
+            Hashtable hashtable = new Hashtable(); 
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (hashtable.ContainsKey(arr[i]))
+                {
+                    hashtable[arr[i]] = (int)hashtable[arr[i]]+1;
+                }
+                else
+                {
+                    hashtable.Add(arr[i], 1);
+                }
+            }
+            foreach (DictionaryEntry item in hashtable)
+            {
+                if ((int)item.Value == k)
+                {
+                    return (int)item.Key;
+                }
+            }
+            return -1;
+        }
 
         /// <summary>
         /// 请保证arr中，只有一种数出现了K次，其他数都出现了M次（K<M）

@@ -8,23 +8,23 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\v-honzhao\\.nuget\\packages\\": {},
-    "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\szdxz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Repo\\Algorithm\\210926_Demon01_对数器\\210930_Demon01_异或\\210930_Demon01_异或.csproj",
+      "projectUniqueName": "D:\\src\\Algorithm\\210926_Demon01_对数器\\210930_Demon01_异或\\210930_Demon01_异或.csproj",
       "projectName": "210930_Demon01_异或",
-      "projectPath": "F:\\Repo\\Algorithm\\210926_Demon01_对数器\\210930_Demon01_异或\\210930_Demon01_异或.csproj",
-      "packagesPath": "C:\\Users\\v-honzhao\\.nuget\\packages\\",
-      "outputPath": "F:\\Repo\\Algorithm\\210926_Demon01_对数器\\210930_Demon01_异或\\obj\\",
+      "projectPath": "D:\\src\\Algorithm\\210926_Demon01_对数器\\210930_Demon01_异或\\210930_Demon01_异或.csproj",
+      "packagesPath": "C:\\Users\\szdxz\\.nuget\\packages\\",
+      "outputPath": "D:\\src\\Algorithm\\210926_Demon01_对数器\\210930_Demon01_异或\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\v-honzhao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\szdxz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21458.32\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
       }
     }
   }
