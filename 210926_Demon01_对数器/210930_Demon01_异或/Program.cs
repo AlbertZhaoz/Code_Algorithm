@@ -7,6 +7,8 @@ namespace _210930_Demon01_异或
     {
         static void Main(string[] args)
         {
+            TestLogarithmic(1000);
+
             int test = 7;
             System.Console.WriteLine((~test)+1);
             System.Console.WriteLine("================");
@@ -82,14 +84,107 @@ namespace _210930_Demon01_异或
         }
 
 
+       
+
+
+        /// <summary>
+        /// 此方法通过对数器的手段
+        /// </summary>
+        /// <returns></returns>
+        static void TestLogarithmic(int testCount)
+        {
+            //需要一个随机数组：随机N种数，其中只有一种数出现了K次，其他数出现了M次（K>1,M>K)
+            int[] randomArr = RandomArray(10, 2, 4);
+            //第一种算法通过Int32位二进制方式，方法生成的数
+            int num1 = FindOnlyKOtherM(randomArr, 2, 4);
+            //第二种Hash表的方法
+            int num2 = FindOnlyKOtherMByHashCode(randomArr, 2, 4);
+            Console.WriteLine("Start test：");
+            for (int i = 0; i < testCount; i++)
+            {
+                Console.WriteLine($"The test index is {i}");
+                if (num1!= num2)
+                {
+                    Console.WriteLine("方法错误，此处数组为:");
+                    Console.WriteLine(randomArr);
+                }
+            }
+            Console.WriteLine("Finish test：");
+        }
+
+        /// <summary>
+        /// 一个随机数组：随机N种数，其中只有一种数出现了K次，其他数出现了M次（K>1,M>K)
+        /// </summary>
+        /// <param name="N"></param>
+        /// <param name="K"></param>
+        /// <param name="M"></param>
+        /// <returns></returns>
+        static int[] RandomArray(int N,int K,int M)
+        {
+            //Random.Next(minValue,maxValue) 也是左闭右开区间
+            //A 32-bit signed integer that is greater than or equal to 0,
+            //and less than maxValue; that is, the range of return values ordinarily includes 0 but not maxValue.
+            //However, if maxValue equals 0, maxValue is returned.
+            if (K < 1 || K > M)
+            {
+                Console.WriteLine("请重新输入K，M的值，不合法");
+            }
+            Random random = new Random();
+            int arrKind = N-1;//出现M次的数的种类
+            int arrLen = K * 1 + arrKind * M;
+            int[] arrResult = new int[arrLen];
+            //需要一个哈希表来判定此处后续添加的随机数字
+            Hashtable hashtable = new Hashtable();
+            int kNumber = random.Next(-200, 200);//随机产生一个-200~200之间的数
+            hashtable.Add(kNumber, 1);
+            for (int i = 0; i < K; i++)
+            {
+                arrResult[i] = kNumber;
+            }
+            //外层循环出现M次的随机数
+            int index = K;//数组下标从K开始
+            for (int i = 0;i< arrKind; i++)
+            {
+                int mNumber = random.Next(-200, 200);//随机产生一个-200~200之间的数
+                while (hashtable.ContainsKey(mNumber))
+                {
+                    mNumber = random.Next(-200, 200);//随机产生一个-200~200之间的数
+                }
+                hashtable.Add(mNumber, 1);
+                for (int j = 0; j < M; j++)
+                {
+                    arrResult[index] = mNumber;
+                    index++;
+                }
+            }
+            //将有规律的数组打乱（随机的i和j位置交换）
+            for (int i = 0; i < arrLen; i++)
+            {
+                //产生一个随机索引，索引位置和i交换
+                int randomIndex = random.Next(0, arrLen);
+                int tmp = arrResult[randomIndex];
+                arrResult[randomIndex] = arrResult[i];
+                arrResult[i] = tmp;
+            }
+
+            return arrResult;           
+        }
+
+        /// <summary>
+        /// 哈希表的方法
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="k"></param>
+        /// <param name="m"></param>
+        /// <returns></returns>
         static int FindOnlyKOtherMByHashCode(int[] arr, int k, int m)
         {
-            Hashtable hashtable = new Hashtable(); 
+            Hashtable hashtable = new Hashtable();
             for (int i = 0; i < arr.Length; i++)
             {
                 if (hashtable.ContainsKey(arr[i]))
                 {
-                    hashtable[arr[i]] = (int)hashtable[arr[i]]+1;
+                    hashtable[arr[i]] = (int)hashtable[arr[i]] + 1;
                 }
                 else
                 {
