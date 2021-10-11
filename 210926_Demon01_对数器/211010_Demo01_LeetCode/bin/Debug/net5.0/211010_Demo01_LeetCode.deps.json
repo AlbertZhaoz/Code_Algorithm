@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "211010_Demo01_LeetCode/1.0.0": {
+        "runtime": {
+          "211010_Demo01_LeetCode.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "211010_Demo01_LeetCode/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

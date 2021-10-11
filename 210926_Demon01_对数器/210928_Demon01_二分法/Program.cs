@@ -6,9 +6,43 @@ namespace _210928_Demon01_二分法
     {
         static void Main(string[] args)
         {
-            int[] arr = new int[] { 1, 2, 3, 5, 5, 6, 7, 9 };
+            int[] arr = new int[] { -1, 0, 3, 5, 9, 12 };
+            Console.WriteLine(Search(arr, 2)); 
+
             var isExist = BSExist(arr, 10);
             Console.WriteLine(isExist);
+        }
+
+        public static int Search(int[] nums, int target)
+        {
+            int L = 0;
+            int R = nums.Length - 1;
+            int mid = 0;
+            while (L < R)
+            {
+                mid = L + ((R - L) >> 1);
+                if (nums[mid] == target)
+                {
+                    return mid;
+                }
+                else if (nums[mid] < target)
+                {
+                    L = mid + 1;
+                    
+                }
+                else
+                {
+                    R = mid - 1;
+                }
+            }
+            if (nums[L] == target)
+            {
+                return L;
+            }
+            else
+            {
+                return -1;
+            }
         }
 
         /// <summary>

@@ -105,7 +105,7 @@ namespace _210930_Demon01_异或
                 Console.WriteLine($"The test index is {i}");
                 if (num1!= num2)
                 {
-                    Console.WriteLine("方法错误，此处数组为:");
+                    Console.WriteLine("Method error:");
                     Console.WriteLine(randomArr);
                 }
             }
