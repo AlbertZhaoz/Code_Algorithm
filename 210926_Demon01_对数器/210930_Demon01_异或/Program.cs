@@ -235,7 +235,6 @@ namespace _210930_Demon01_异或
                 }
             }
             return kValue;
-
         }
     }
 }
